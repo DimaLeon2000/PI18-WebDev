@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?
+	include 'data.inc.php';
+	include 'lib.inc.php';
+?>
 <html>
 	<head>
 		<title>Контакты</title>
@@ -9,7 +13,7 @@
 
 		<div id="header">
 			<!-- Верхняя часть страницы -->
-			<span class="slogan">Знания - сила</span>
+			<? include 'top.inc.php'?>
 			<!-- Верхняя часть страницы -->
 		</div>
 
@@ -18,31 +22,15 @@
 			<h1>Обратная связь</h1>
 			<!-- Заголовок -->
 			<!-- Область основного контента -->
-			<h3>Адрес</h3>
-			<p></p>
-			<h3>Задайте вопрос</h3>
-			<form action='' method='post'>
-				<label>Тема письма: </label><br />
-				<input name='subject' type='text' size="50"/><br />
-				<label>Содержание: </label><br />
-				<textarea name='body' cols="50" rows="10"></textarea><br /><br />
-				<input type='submit' value='Отправить' />
-			</form>	
+			<? include 'contact.inc.php'?>
 			<!-- Область основного контента -->
 		</div>
 		<div id="nav">
-			<h2>Навигация по сайту</h2>
-			<!-- Меню -->
-			<ul>
-				<li><a href='index.php'>Домой</a></li>
-				<li><a href='about.php'>О нас</a></li>
-				<li><a href='contact.php'>Контакты</a></li>
-			</ul>
-			<!-- Меню -->
+			<? include 'menu.inc.php'?>
 		</div>
 		<div id="footer">
 			<!-- Нижняя часть страницы -->
-			&copy; Веб-мастер, 2017
+			<? include 'bottom.inc.php'?>
 			<!-- Нижняя часть страницы -->
 		</div>
 	</body>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?
+	include 'data.inc.php';
+	include 'lib.inc.php';
+?>
 <html>
 	<head>
 		<title>Таблица умножения</title>
@@ -9,7 +13,7 @@
 
 		<div id="header">
 			<!-- Верхняя часть страницы -->
-			<span class="slogan">Знания - сила</span>
+			<? include 'top.inc.php'?>
 			<!-- Верхняя часть страницы -->
 		</div>
 
@@ -19,35 +23,16 @@
 			<!-- Заголовок -->
 			<!-- Область основного контента -->
 			<!-- Таблица -->
-			<? echo "<table border='0'><br />";
-			for ($rows = 1; $rows <= 10; $rows++) {
-				echo "<tr>";
-				for ($cols = 1; $cols <= 10; $cols++) {
-					if (($cols == 1) || ($rows == 1)) {echo "<td style='background-color: #ddd; font-weight: bold; text-align:center'>";}
-					else {echo "<td>";}
-					echo ($cols * $rows);
-					echo "</td>";
-				}
-				echo "</tr>";
-			}
-			echo "</table>";
-			?>
+			<? drawTable(10,10,'#ddd');?>
 			<!-- Таблица -->
 			<!-- Область основного контента -->
 		</div>
 		<div id="nav">
-			<h2>Навигация по сайту</h2>
-			<!-- Меню -->
-			<ul>
-				<li><a href='index.php'>Домой</a></li>
-				<li><a href='about.php'>О нас</a></li>
-				<li><a href='contact.php'>Контакты</a></li>
-			</ul>
-			<!-- Меню -->
+			<? include 'menu.inc.php'?>
 		</div>
 		<div id="footer">
 			<!-- Нижняя часть страницы -->
-			&copy; Веб-мастер, 2017
+			<? include 'bottom.inc.php'?>
 			<!-- Нижняя часть страницы -->
 		</div>
 	</body>
