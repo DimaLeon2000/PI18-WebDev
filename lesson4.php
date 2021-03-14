@@ -47,5 +47,5 @@
 		}
 	?></label>
 	<br/>
-	<?unset($_POST['a']); unset($_POST['b']); unset($_POST['c']);?>
+	<?unset($_POST);?>
 </form>

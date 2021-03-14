@@ -39,5 +39,5 @@
 	<label>cm<sup>2</sup>
 	</label>
 	<br/>
-	<?unset($_POST['d1']); unset($_POST['d2']);?>
+	<?unset($_POST);?>
 </form>
