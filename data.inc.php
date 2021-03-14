@@ -9,6 +9,8 @@
 		['link'=>'Таблица умножения', 'href'=>'index.php?id=table'],
 		['link'=>'Задание №1', 'href'=>'index.php?id=lesson1'],
 		['link'=>'Задание №2', 'href'=>'index.php?id=lesson2'],
+		['link'=>'Задание №3', 'href'=>'index.php?id=lesson3'],
+		['link'=>'Задание №4', 'href'=>'index.php?id=lesson4'],
 		['link'=>'Контакты', 'href'=>'index.php?id=contact']
 		];
 	$day = strftime('%d');
