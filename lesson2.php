@@ -39,5 +39,4 @@
 	<label>cm<sup>2</sup>
 	</label>
 	<br/>
-	<?unset($_POST);?>
 </form>
