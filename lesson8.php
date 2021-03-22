@@ -11,7 +11,11 @@
 		for ($i=1; $i <= $_POST['n']; $i++) {
 			echo "<input name='arr[]' type='number' value=0 style='width: 32px;'/>";
 		}
-		if (isset($_POST['n'])) echo "<input type='submit' value='⇓⇓⇓⇓⇓'/>";
+		if (isset($_POST['n'])) {
+			echo "<label>K = </label><input name='k' type='number' value='<?= (isset($_POST['k'])) ? $_POST['k'] : 1?>' min=1/><br/>";
+			echo "<label>L = </label><input name='l' type='number' value='<?= (isset($_POST['l'])) ? $_POST['l'] : 1?>' min=1/><br/>";
+			echo "<input type='submit' value='⇓⇓⇓⇓⇓'/>";
+		}
 	?>
 	<br/>
 </form>
