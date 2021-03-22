@@ -17,5 +17,4 @@
 		}
 	?>
 	<br/>
-	<?unset($_POST);?>
 </form>

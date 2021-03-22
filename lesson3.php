@@ -84,5 +84,4 @@
 		else {echo (0);}
 	?>"/>
 	<br/>
-	<?unset($_POST);?>
 </form>

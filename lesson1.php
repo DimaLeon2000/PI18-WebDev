@@ -18,8 +18,6 @@
 	<br/>
 	<input type='submit' value='⇓⇓⇓⇓⇓'/>
 	<br/>
-	<input name='inches' type='number' disabled value="<?= (isset($_POST['cm']) ? round($_POST['cm']/2.54, 2) : 0)?>"/>
-	<label>in</label>
+	<label><?= (isset($_POST['cm']) ? round($_POST['cm']/2.54, 2) : '???')?>in</label>
 	<br/>
-	<?unset($_POST)?>
 </form>

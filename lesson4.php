@@ -47,5 +47,4 @@
 		}
 	?></label>
 	<br/>
-	<?unset($_POST);?>
 </form>
