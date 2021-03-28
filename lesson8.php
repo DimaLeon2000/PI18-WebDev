@@ -18,7 +18,7 @@
 		echo "<label>K = </label>";
 		echo "<input name='k' type='number' value='$k' min='1' max='$n'/><br/>";
 		echo "<label>L = </label>";
-		echo "<input name='l' type='number' value='$l' min='1' max='$n'/><br/>";
+		echo "<input name='l' type='number' value='$l' min='$n' max='$n'/><br/>";
 		echo "<input type='submit' value='⇓⇓⇓⇓⇓'/>";
 		echo "<br/>";
 		$sum = 0;
