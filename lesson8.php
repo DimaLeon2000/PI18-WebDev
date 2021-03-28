@@ -27,7 +27,7 @@
 			$sum = $sum + $_POST['arr'][$i];
 		}
 		$avg = $sum/($l-$k+1);
-		echo '<span style="text-decoration:overline">N</span><sub>K</sub><sup>L</sup> = '.$avg;
+		echo '<span style="text-decoration:overline">N</span><sub>i=K</sub><sup>L</sup> = '.$avg;
 		}
 		else echo 'ОШИБКА: значение K должно быть меньше или равно L.';
 	} ?>
