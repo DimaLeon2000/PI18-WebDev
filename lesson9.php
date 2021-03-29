@@ -19,13 +19,17 @@
 		}
 		echo "<input type='submit' value='⇓⇓⇓⇓⇓'/>";
 		echo "<br/>";
-		$sum = 0;
-		foreach ($_POST['arr'] as &$i) {
-			foreach ($i as &$j) {
+		$arr = $_POST['arr'];
+		$k = 0;
+		foreach ($arr as $i) {
+			$sum = 0;
+			foreach ($i as $j) {
 			if ($j % 3 == 0) $sum = $sum + $j;
 			}
+			$k++;
+			echo 'M['.$k.'] = '.$sum;
 		}
-		echo $sum;
-	}?>
+	}
+	unset($arr);?>
 	<br/>
 </form>
