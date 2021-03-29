@@ -16,6 +16,7 @@
 		['link'=>'Задание №7', 'href'=>'index.php?id=lesson7'],
 		['link'=>'Задание №8', 'href'=>'index.php?id=lesson8'],
 		['link'=>'Задание №9', 'href'=>'index.php?id=lesson9'],
+		['link'=>'Задание №10', 'href'=>'index.php?id=lesson10'],
 		['link'=>'Контакты', 'href'=>'index.php?id=contact']
 		];
 	$day = strftime('%d');
