@@ -2,6 +2,7 @@
 <?
 	include 'data.inc.php';
 	include 'lib.inc.php';
+	include 'cookie.inc.php';
 	$title = "Наш сайт";
 	$header = "$welcome, Гость!";
 	$id = isset($_GET['id']) ? strtolower(strip_tags(trim($_GET['id']))) : '';
@@ -82,6 +83,8 @@
 		<div id="header">
 			<!-- Верхняя часть страницы -->
 			<? include 'top.inc.php'?>
+			<? echo "Вы зашли к нам $visit_counter раз <br>";
+			echo "Последнее посещение: $last_visit";?>
 			<!-- Верхняя часть страницы -->
 		</div>
 		<div id="content">
